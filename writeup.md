@@ -15,15 +15,30 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images/solidWhiteCurve.jpg "Original"
+[image2]: ./examples/solidWhiteCurve_gray.jpg "Grayscale"
+[image3]: ./examples/solidWhiteCurve_edges.jpg "Edges"
+[image4]: ./examples/solidWhiteCurve_mask.jpg "Mask"
+[image5]: ./examples/solidWhiteCurve_masked.jpg "Edges Masked"
+[image6]: ./examples/solidWhiteCurve_hough.jpg "Hough Transformation"
+[image7]: ./examples/solidWhiteCurve_average.jpg "Lines Modification"
+
 
 ---
 
 ### Reflection
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+###1. Pipeline explanation
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consists of several steps, all included in the funcion process_image(). In this section i will describe in detail each step and how i have reached them. I will use one image as an example to explain all process.
+![alt text][image2]
+
+* Conver the images to grayscale. It is only a transformation usign the function grayscale()
+![alt text][image2]
+* Edge detection. Next step is edge detection using Canny Edge detection. First i use the function gaussian_blur() with kernel_size=3. 
+![alt text][image3]
+* Mask the image.
+![alt text][image4]
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
