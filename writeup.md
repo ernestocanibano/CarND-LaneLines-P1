@@ -1,8 +1,8 @@
-#**Finding Lane Lines on the Road** 
+# **Finding Lane Lines on the Road** 
 
-##Writeup by Ernesto Cañibano
+## Writeup by Ernesto Cañibano
 
-###This is the writeup associated with the first project of the Term 1, of the Self-driving Car Nanodegree
+### This is the writeup associated with the first project of the Term 1, of the Self-driving Car Nanodegree
 
 ---
 
@@ -28,7 +28,7 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-###1. Pipeline explanation
+### 1. Pipeline explanation
 
 My pipeline consists of several steps, all included in the funcion *process_image()*. In this section i will describe in detail each step and how i have reached them. I will use one image as an example to explain all process.
 
@@ -69,7 +69,7 @@ My pipeline consists of several steps, all included in the funcion *process_imag
   ![alt text][image7]
   
 
-###2. Identify potential shortcomings with your current pipeline
+### 2. Identify potential shortcomings with your current pipeline
 
 
 The pipeline works fine with all test image and with two test videos.  
@@ -82,7 +82,7 @@ I think the pipeline can fail in some cases such as:
 * When the car approaches to very tight curves.
 
 
-###3. Suggest possible improvements to your pipeline
+### 3. Suggest possible improvements to your pipeline
 
 I think the pipeline could be improved by appliying some time of color selection or color enhanced at the beginning, before converting to grayscale. In this way the effect of color of the road.
 
